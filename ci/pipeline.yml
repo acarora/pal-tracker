@@ -80,4 +80,4 @@ jobs:
       manifest: pal-tracker/manifest-production.yml
       path: pal-tracker-artifacts/pal-tracker-*.jar
       environment_variables:
-        WELCOME_MESSAGE: "Hello from the production environment"
+        WELCOME_MESSAGE: "Hello from the Abhishek environment"
