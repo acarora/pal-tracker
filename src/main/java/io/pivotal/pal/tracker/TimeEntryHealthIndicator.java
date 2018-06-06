@@ -18,7 +18,7 @@ public class TimeEntryHealthIndicator implements HealthIndicator {
     @Override
     public Health health() {
         Health.Builder builder = new Health.Builder();
-      if (timeEntryRepository.list().size() > HEALTH_CHECK_COUNTER){
+      if (timeEntryRepository.list().size() < HEALTH_CHECK_COUNTER){
             builder.up();
       } else {
           builder.down();
